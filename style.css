@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav button{
+    color: white;
+    font-weight: 300;
+}
+
+body{
+    color: #202a3c;
+}
