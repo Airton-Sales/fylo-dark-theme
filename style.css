@@ -9,6 +9,7 @@ nav button{
     font-weight: 300;
 }
 
-body{
-    color: #202a3c;
+input {
+    outline: none;
+    color: #339ecc;
 }
