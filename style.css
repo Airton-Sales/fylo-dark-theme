@@ -13,3 +13,8 @@ input {
     outline: none;
     color: #339ecc;
 }
+
+h1{
+    font-family: Raleway;
+    font-weight: bold;
+}

@@ -5,83 +5,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
-<body class="bg-[#1B2330] h-full flex flex-col items-center overflow-x-clip">
-  <header class=" h-[90px] flex justify-center items-center gap-[4.3rem]">
-    <img class="w-[100px] h-[34px] " src="./images/logo.svg" alt="logo">
-    <nav class="flex  items-center justify-between w-[200px] h-[40px]">
-      <button class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Features</button>
-      <button class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Team</button>
-      <button class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Sign In</button>
+<body class="bg-[#1B2330] h-full flex flex-col items-center ">
+  <header class=" h-[90px] flex justify-center items-center gap-[4.3rem] lg:w-[1280px] lg:h-[52px] lg:gap-[35rem]">
+    <img class="w-[80px] h-[24px] lg:w-[135px] lg:h-[40px] lg:mt-20" src="./images/logo.svg" alt="logo">
+    <nav class="flex  items-center justify-between w-[200px] h-[40px] lg:mt-20">
+      <button class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4 text-[0.750rem] lg:text-[1rem]">Features</button>
+      <button class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4 text-[0.750rem] lg:text-[1rem]">Team</button>
+      <button class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4 text-[0.750rem] lg:text-[1rem]">Sign In</button>
     </nav>
   </header>
-  <div class="h-[225px] flex justify-center items-center mt-24">
-    <img class="w-[355px] h-[280px]" src="images/illustration-intro.png" alt="">
+  <div class="h-[225px] flex justify-center items-center mt-24 lg:w-[53%] lg:h-[534px] lg:mt-0">
+    <img class="w-[304px] h-[225px] lg:w-[100%] lg:h-auto" src="images/illustration-intro.png" alt="primeira imagem ilustrativa">
   </div>
 
-  <div class="w-[407px] h-[108px] flex justify-center items-center z-10 flex-col mt-24">
-    <h1 class="text-white text-[1.91rem] text-center">All your files in one secure location, accessible anywhere.
+  <div class="w-[407px] h-[108px] flex justify-center items-center z-10 flex-col mt-24 lg:mt-0 lg:w-[734px] lg:h-[120px]">
+    <h1 class="text-white text-[1.5rem] font-bold text-center leading-[2.25rem] lg:text-[2.5rem]">All your files in one secure <br class="lg:hidden"> location, accessible <br class="lg:hidden"> anywhere.
     </h1>
   </div>
-  <div class="w-[357px] h-[100px] flex justify-center items-center mt-10">
-    <p class="text-white text-center text-[1.12rem] font-[300]">Fylo stores all your most important files in one secure
-      location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+  <div class="w-[357px] h-[100px] flex justify-center items-center mt-10 lg:w-[580px] lg:h-[90px] lg:mt-5">
+    <p class="text-white text-center text-[0.875rem] leading-[1.3125rem] lg:text-[1.25rem] lg:leading-[1.9rem]">Fylo stores all your most important files in <br class="lg:hidden"> one secure
+      location. Access them wherever <br class="lg:hidden"> you need, share and collaborate with friends <br class="lg:hidden"> family, and co-workers.</p>
   </div>
   <div>
     <button
-      class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-0.5 w-[240px] h-[48px] mt-10 bg-gradient-to-br from-[#00FFF8] via-[#00C8FF] to-[#00C8FF] rounded-full text-white font-bold">Get
+      class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-0.5 w-[240px] h-[48px] mt-7 bg-gradient-to-br from-[#00FFF8] via-[#00C8FF] to-[#00C8FF] rounded-full text-white font-bold text-[0.875rem]">Get
       Started</button>
   </div>
 
-  <div class="mt-28 flex flex-col items-center w-80 h-48">
-    <img src="images/icon-access-anywhere.svg" alt="access-anywhere">
-    <h2 class="text-white text-[1.3rem] mt-10">Access your files, anywhere</h2>
-    <p class="text-white text-center text-[0.99rem] tracking-tight font-[300] mt-2">The ability to use a smartphone,
-      tablet, or computer to access your account means your files follow you everywhere.</p>
+  <div class="flex flex-col lg:flex-row lg:mt-28 lg:gap-32">
+    <div class="mt-28 flex flex-col items-center w-80 h-48 lg:mt-2 lg:w-[349px]">
+      <img src="images/icon-access-anywhere.svg" alt="access-anywhere">
+      <h2 class="text-white text-[1.125rem] font-bold mt-10 lg:text-[1.25rem]">Access your files, anywhere</h2>
+      <p class="text-white text-center text-[0.875rem] tracking-tight font-[300] mt-2">The ability to use a smartphone,
+        tablet, or computer to access your account means your files follow you everywhere.</p>
+    </div>
+    <div class="mt-28 flex flex-col items-center w-80 h-48 lg:mt-0 ">
+      <img src="images/icon-security.svg" alt="">
+      <h2 class="text-white text-[1.125rem] font-bold mt-10 lg:text-[1.25rem]">Real-time collaboration</h2>
+      <p class="text-white text-center text-[0.875rem] tracking-tight font-[300] mt-2">2-factor authentication and
+        user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+    </div>
   </div>
 
-  <div class="mt-28 flex flex-col items-center w-80 h-48">
-    <img src="images/icon-security.svg" alt="">
-    <h2 class="text-white text-[1.3rem] mt-10">Real-time collaboration</h2>
-    <p class="text-white text-center text-[0.99rem] tracking-tight font-[300] mt-2">2-factor authentication and
-      user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+  <div class="flex flex-col lg:flex-row lg:gap-32">
+    <div class="mt-28 flex flex-col items-center w-80 h-48">
+      <img src="images/icon-collaboration.svg" alt="">
+      <h2 class="text-white text-[1.125rem] font-bold mt-10 lg:text-[1.25rem]">Real-time collaboration</h2>
+      <p class="text-white text-center text-[0.875rem] tracking-tight  font-[300] mt-2">Securely share files and folders
+        with friends, family and colleagues for live collaboration. No email attachments required.</p>
+    </div>
+    <div class="mt-28 flex flex-col items-center w-80 h-48 lg:mt-[7.5rem]">
+      <img src="images/icon-any-file.svg" alt="">
+      <h2 class="text-white text-[1.125rem] font-bold mt-10 lg:text-[1.25rem]">Store any type of file</h2>
+      <p class="text-white text-center text-[0.875rem] tracking-tight font-[300] mt-2">Whether you're sharing holidays
+        photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+    </div>
   </div>
 
-  <div class="mt-28 flex flex-col items-center w-80 h-48">
-    <img src="images/icon-collaboration.svg" alt="">
-    <h2 class="text-white text-[1.3rem] mt-10">Real-time collaboration</h2>
-    <p class="text-white text-center text-[0.99rem] tracking-tight  font-[300] mt-2">Securely share files and folders
-      with friends, family and colleagues for live collaboration. No email attachments required.</p>
-  </div>
 
-  <div class="mt-28 flex flex-col items-center w-80 h-48">
-    <img src="images/icon-any-file.svg" alt="">
-    <h2 class="text-white text-[1.3rem] mt-10">Store any type of file</h2>
-    <p class="text-white text-center text-[0.99rem] tracking-tight font-[300] mt-2">Whether you're sharing holidays
-      photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
-  </div>
-  <div class="w-screen h-[225px] flex justify-center items-center mt-24">
-    <img class="w-[355px] h-[280px]" src="images/illustration-stay-productive.png" alt="">
-  </div>
 
-  <div class="mt-24 flex flex-col items-center w-80 h-48">
-    <h2 class="text-white text-[1.3rem]">Stay productive, wherever you are</h2>
-    <p class="text-white text-[1.02rem] tracking-[-0.03em] font-[300] mt-4 text-start">Never let location be an issue
-      when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-    <p class="text-white text-[1.02rem] tracking-[-0.03em] font-[300] mt-4 text-start">Securely share files and folders
-      with friends, family and colleagues for live collaboration. No email attachments required.</p>
-  </div>
-
-  <div class="w-80 flex flex-col justify-start mt-8 hover:scale-105 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-0.5">
-    <a href="#">
-      <button class="text-[#00FFF8] flex items-center">See how Fylo works <img class="ml-2" src="images/icon-arrow.svg"
-          alt=""></button>
-      <div class="w-[10.3rem] h-[0.05rem] bg-[#00FFF8]"></div>
-    </a>
-  </div>
+  <div class="flex items-center  flex-col lg:flex-row lg:w-[950px] lg:h-[350px] lg:items-start bg-green-500">
+    <div class="w-screen h-[225px] flex justify-center items-center mt-24 lg:justify-start lg:w-[414.76px]  lg:h-[263.63px] bg-red-400">
+      <img class="w-[304px] h-[229.27px]" src="images/illustration-stay-productive.png" alt="">
+    </div>
+    <div class="mt-12 flex flex-col items-center w-80 h-48 lg:w-[563px] lg:h-[282px]">
+      <h2 class="text-white text-[1.125rem] font-bold mr-5">Stay productive, wherever you are</h2>
+      <p class="text-white text-[1.02rem] tracking-[-0.03em] font-[300] mt-4 text-start">Never let location be an issue
+        when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+      <p class="text-white text-[1.02rem] tracking-[-0.03em] font-[300] mt-4 text-start">Securely share files and folders
+        with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        <div class="w-80 flex flex-col justify-start mt-8 hover:scale-105 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-0.5">
+          <a href="#">
+            <button class="text-[#00FFF8] flex items-center">See how Fylo works <img class="ml-2" src="images/icon-arrow.svg"
+                alt=""></button>
+            <div class="w-[10.3rem] h-[0.05rem] bg-[#00FFF8]"></div>
+          </a>
+        </div>
+      </div>
+    </div>
 
 
   <div class="w-[19rem] mt-44">
@@ -159,18 +167,18 @@
 
     <div>
       <ul class="text-white text-[1rem] tracking-[-0.03em] font-[200] mt-10">
-        <li  class="w-16 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">About Us</li>
-        <li class="mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Jobs</li>
-        <li class="mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Press</li>
-        <li class="mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Blog</li>
+        <li  class="w-[3.8rem] hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">About Us</li>
+        <li class="w-[1.9rem] mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Jobs</li>
+        <li class="w-[2.15rem] mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Press</li>
+        <li class="w-[2rem] mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Blog</li>
       </ul>
     </div>
 
     <div>
       <ul class="text-white text-[1rem] tracking-[-0.03em] font-[200] mt-10">
-        <li class="hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Contact Us</li>
-        <li class="mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Terms</li>
-        <li class="mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Privacy</li>
+        <li class="w-[4.5rem] hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Contact Us</li>
+        <li class="w-[2.5rem] mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Terms</li>
+        <li class="w-[2.9rem] mt-4 hover:scale-110 transition-all hover:cursor-pointer after:content-[''] after:w-0 after:h-[0.090rem] after:bg-white after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0 leading-4">Privacy</li>
       </ul>
     </div>
 
