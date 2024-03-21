@@ -32,6 +32,7 @@ function enviarEmail() {
   if (!validarEmail(email)) {
     alert("O e-mail digitado é inválido.");
     emailInput.style.borderColor = "red";
+    emailInput.value = "";
     return;
   }
 
